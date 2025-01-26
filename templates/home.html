@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - SAR Image Colorization</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #fff; /* Clean white background */
+        }
+        header {
+            background-color: #4A90E2; /* Soft blue header */
+            color: #fff;
+            padding: 40px;
+            text-align: center;
+            border-bottom: 3px solid #fff;
+        }
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #fff; /* White navbar */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 14px 20px;
+            font-size: 18px;
+            text-align: center;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #4A90E2; /* Hover color matches the header */
+        }
+        section {
+            padding: 60px;
+            text-align: center;
+            max-width: 900px;
+            margin: 40px auto;
+            border-radius: 8px;
+            background-color: #f9f9f9; /* Light gray section background */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+        section h2 {
+            color: #333;
+            font-size: 36px;
+        }
+        section p {
+            color: #666;
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #4A90E2; /* Soft blue button */
+            color: white;
+            padding: 12px 25px;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            margin-top: 30px;
+        }
+        .btn:hover {
+            background-color: #357ABD; /* Darker blue on hover */
+        }
+        .contact {
+            padding: 40px;
+            margin-top: 40px;
+            border-radius: 8px;
+            text-align: center;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+        .contact h3 {
+            font-size: 24px;
+            color: #4A90E2;
+        }
+        .contact p {
+            font-size: 16px;
+            color: #666;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+        .feature-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+        .feature-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+        .feature-card h3 {
+            font-size: 20px;
+            color: #4A90E2; /* Blue for feature card titles */
+        }
+        .feature-card p {
+            color: #666;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>SAR Image Colorization</h1>
+    <p>Transform grayscale SAR images into vibrant, colorful representations!</p>
+</header>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/test">Test Image</a>
+    <a href="#contact">Contact Me</a>
+</nav>
+
+<section>
+    <h2>What are SAR Images?</h2>
+    <p>
+        Synthetic Aperture Radar (SAR) images are used to capture detailed images of the Earth's surface, typically for applications in remote sensing, environmental monitoring, and disaster management. These images are often in grayscale due to the radar's nature, which doesn't capture color information. Our tool applies advanced colorization techniques to enhance these grayscale images, helping you visualize the data in a more intuitive and aesthetic way.
+    </p>
+    <a href="/test" class="btn">Get Started</a>
+</section>
+
+<!-- New Features Section -->
+<section>
+    <h2>Key Features & Applications</h2>
+    <div class="feature-cards">
+        <div class="feature-card">
+            <h3>Deep Learning Model</h3>
+            <p>Advanced CNN architecture trained on paired SAR and optical datasets for accurate colorization.</p>
+        </div>
+        <div class="feature-card">
+            <h3>All-Weather Capability</h3>
+            <p>Maintain SAR's advantage of operating in any weather condition while adding intuitive color information.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Real-time Processing</h3>
+            <p>Efficient model architecture enables quick colorization of new SAR imagery.</p>
+        </div>
+    </div>
+</section>
+
+<div class="contact" id="contact">
+    <h3>Contact Me</h3>
+    <p>If you have any questions or would like to learn more, feel free to reach out!</p>
+    <p>Email: <a href="mailto:chaitanyatiruveedhula17@gmail.com">chaitanyatiruveedhula17</a></p>
+</div>
+
+<footer>
+    <p>&copy; 2025 SAR Image Colorization | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
