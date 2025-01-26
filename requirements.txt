@@ -1,5 +1,6 @@
 torch
 scikit-image
+IPython==7.31.0
 
 numpy
 matplotlib
